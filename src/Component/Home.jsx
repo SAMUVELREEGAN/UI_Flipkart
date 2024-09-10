@@ -17,10 +17,7 @@ const Home = () => {
         <button onClick={handle} className='login_btn d-none'>Login</button>
         <div className='Caoursole'>
           <Carousel >
-        <Carousel.Item interval={1000}>
-          <img src="1.jpg" alt="" className='w-100'/>
-        </Carousel.Item>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={500}>
         <img src={require("../Assets/3.jpg")} alt="" className='w-100'/>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
