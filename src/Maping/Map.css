@@ -1,0 +1,16 @@
+.map_style{
+    display: flex;
+    overflow: auto;
+   
+}
+.map_style a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;   
+}
+.map_container{
+    background-color: rgb(131, 131, 243);
+    /* margin: 5px; */
+}

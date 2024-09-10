@@ -1,0 +1,74 @@
+.login_container{
+    background-color: rgb(213, 213, 255);
+}
+.login_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;   
+}
+.login_info{
+    box-shadow: 0px 0px 10px black;
+    padding-bottom: 1%;
+    background-color: blue;
+    padding: 2%;
+}
+.login_info h1{
+    color: white;
+    padding: 2px 0px 10% 7%;
+}
+.login_value{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    margin: 10px;
+}
+.login_input{
+    padding: 10px;
+    padding-right: 100px;
+    margin-top: 20px;
+}
+.login_btn:hover{
+    cursor: pointer;
+}
+.login_heading{
+    display: flex;
+}
+.login_heading img{
+    width: 45px;
+    height: 45px;
+    margin-left: 50px;
+}
+h6{
+    margin-top: 20px !important;
+    margin-left: 12%;
+    font-size: 13px !important;
+}
+h6 span{
+    color: white;
+    cursor: pointer;
+}
+.check{
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.check_click{
+    position: relative;
+    top: -3px;
+}
+.check_name{
+    font-size: 10px;
+    color: white;
+    position: relative;
+    right: 12px;
+    cursor: pointer;
+}
+

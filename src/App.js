@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './Login/Login';
+import Home from './Component/Home';
+import Layout from './Component/Layout';
+import DataMap from './Maping/DataMap';
+import CartManager from './Page/CartManager';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <BrowserRouter>
+        <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+          <Route path="/mobile" element={<DataMap type="mobile"/>} />
+          <Route path="/laptop" element={<DataMap type="laptop" />} />
+          <Route path="/fashion" element={<DataMap type="fashion" />} />
+          <Route path="/shoe" element={<DataMap type="shoe" />} />
+          <Route path='/cart' element={<CartManager />} />
+        </Route>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
