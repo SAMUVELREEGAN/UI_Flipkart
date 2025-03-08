@@ -14,7 +14,7 @@ const Header = () => {
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-light mb-3">
           <Container fluid>
-            <Navbar.Brand href="/" className='nav_logo w-75 d-flex ps-lg-5'><img src="logo.png" className='nav_img ' alt='Error'/>
+            <Navbar.Brand href="/" className='nav_logo w-75 d-flex ps-lg-5'><img src={require("../Assets/logo.png")} className='nav_img ' alt='Error'/>
             <Form className="d-flex w-75">
                   <Form.Control
                     type="search"

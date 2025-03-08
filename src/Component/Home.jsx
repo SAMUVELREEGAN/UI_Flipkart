@@ -18,7 +18,7 @@ const Home = () => {
         <div className='Caoursole'>
           <Carousel >
         <Carousel.Item interval={1000}>
-          <img src="1.jpg" alt="" className='w-100'/>
+          <img src={require("../Assets/1.jpg")} alt="" className='w-100'/>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
         <img src={require("../Assets/3.jpg")} alt="" className='w-100'/>
